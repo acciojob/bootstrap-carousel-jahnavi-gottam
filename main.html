@@ -3,88 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Carousel</title>
+    <title>Carousel</title>
 
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-    <style>
-        #myCarousel {
-            margin: 8px 10px;
-        }
-
-        #myCarousel .item {
-            height: 280px;
-            background-color: #555;
-        }
-
-        #myCarousel .item h1 {
-            text-align: center;
-            padding-top: 100px;
-            margin: 0;
-            color: #333;
-            font-size: 40px;
-        }
-    </style>
 </head>
 
 <body>
 
-    <!-- IMPORTANT: carousel AND slide classes -->
-    <div id="myCarousel" class="carousel slide">
+<div id="myCarousel" class="carousel slide">
 
-        <div class="carousel-inner">
+    <div class="carousel-inner">
 
-            <!-- Slide 1 -->
-            <div class="item first-slide">
-                <h1>First slide</h1>
-            </div>
-
-            <!-- Slide 2 -->
-            <div class="item second-slide">
-                <h1>Second slide</h1>
-            </div>
-
-            <!-- Slide 3 - ACTIVE -->
-            <div class="item third-slide active">
-                <h1>Third slide</h1>
-            </div>
-
-            <!-- Slide 4 -->
-            <div class="item fourth-slide">
-                <h1>Fourth slide</h1>
-            </div>
-
-            <!-- Slide 5 -->
-            <div class="item fifth-slide">
-                <h1>Fifth slide</h1>
-            </div>
-
+        <div class="item first-slide">
+            <h1>First slide</h1>
         </div>
 
-        <!-- Previous -->
-        <a class="left carousel-control"
-           href="#myCarousel"
-           data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
+        <div class="item second-slide">
+            <h1>Second slide</h1>
+        </div>
 
-        <!-- Next -->
-        <a class="right carousel-control"
-           href="#myCarousel"
-           data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
+        <div class="item third-slide active">
+            <h1>Third slide</h1>
+        </div>
+
+        <div class="item fourth-slide">
+            <h1>Fourth slide</h1>
+        </div>
+
+        <div class="item fifth-slide">
+            <h1>Fifth slide</h1>
+        </div>
 
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <a class="left carousel-control"
+       href="#myCarousel"
+       data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <a class="right carousel-control"
+       href="#myCarousel"
+       data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
 
-    <script>
-        $('#myCarousel').carousel();
-    </script>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<script>
+    $("#myCarousel").carousel();
+</script>
 
 </body>
 </html>
