@@ -30,30 +30,46 @@
 
 <body>
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- IMPORTANT: carousel AND slide classes -->
+    <div id="myCarousel" class="carousel slide">
 
         <div class="carousel-inner">
 
+            <!-- Slide 1 -->
             <div class="item first-slide">
                 <h1>First slide</h1>
             </div>
 
+            <!-- Slide 2 -->
             <div class="item second-slide">
                 <h1>Second slide</h1>
             </div>
 
+            <!-- Slide 3 - ACTIVE -->
             <div class="item third-slide active">
                 <h1>Third slide</h1>
             </div>
 
+            <!-- Slide 4 -->
+            <div class="item fourth-slide">
+                <h1>Fourth slide</h1>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="item fifth-slide">
+                <h1>Fifth slide</h1>
+            </div>
+
         </div>
 
+        <!-- Previous -->
         <a class="left carousel-control"
            href="#myCarousel"
            data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
 
+        <!-- Next -->
         <a class="right carousel-control"
            href="#myCarousel"
            data-slide="next">
@@ -65,6 +81,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+        $('#myCarousel').carousel();
+    </script>
 
 </body>
 </html>
